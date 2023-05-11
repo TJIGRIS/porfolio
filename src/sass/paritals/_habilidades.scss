@@ -4,33 +4,65 @@
   place-content: center;
   height: calc(100vh - 5rem);
 
-  & h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
 
-    &-front,
-    &-backend {
-      width: 20rem;
+    &-dev {
       background: $bg-color-variante;
-      border-radius: 0.5rem;
       padding: 1rem;
-      display: flex;
-      flex-direction: column;
+      border-radius: 0.5rem;
 
       & > h3 {
         text-align: center;
+        font-size: $fontSizeSubtitulo;
         margin-bottom: 1rem;
+        font-weight: normal;
       }
-      
 
+      &-contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        place-content: center;
+        gap: 0.5rem;
+        width: 20rem;
+        height: 10rem;
 
+        &-midificado {
+          place-content: start;
+        }
+
+        &-elemento {
+          width: 7rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          & .icon {
+            width: 1.3rem;
+            transition: all 500ms ease;
+          }
+
+          & .icon:hover {
+            color: $color-blanco;
+          }
+
+          & h4 {
+            color: $color-blanco;
+            font-size: $fontSizeTexto2;
+            font-weight: 500;
+          }
+
+          & p {
+            color: $color-gris;
+            font-size: $fontSizeTexto;
+            font-weight: 300;
+          }
+        }
+      }
     }
   }
 }

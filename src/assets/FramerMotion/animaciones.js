@@ -7,9 +7,9 @@ export const animacionApararicion = (d) => {
       width: 0,
 
       transition: {
+        delay: d,
         type: "tween",
         duration: 1,
-        delay: d,
       },
     },
   };

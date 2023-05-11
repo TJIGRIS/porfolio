@@ -1,11 +1,17 @@
+// importar react
 import React from "react";
+
+// importar morion de framer motion para las animaciones
 import { motion } from "framer-motion";
+
+// importar funcion de la animacion
 import { animacionApararicion } from "../assets/FramerMotion/animaciones";
 
 export const SobreMi = () => {
   return (
     <section id="sobreMi" className="sobreMi">
-      <h2 className="sobreMi__titulo rela">
+      {/* titulo */}
+      <h2 className="titulo rela">
         Sobre <span>Mi</span>
         <motion.span
           variants={animacionApararicion(0.1)}
@@ -16,6 +22,7 @@ export const SobreMi = () => {
         ></motion.span>
       </h2>
 
+      {/* imagen */}
       <div className="sobreMi__imagen rela">
         <div className="sobreMi__imagen-p">
           <motion.span
@@ -432,6 +439,7 @@ export const SobreMi = () => {
         </div>
       </div>
 
+      {/* informacion de mi */}
       <div className="sobreMi__info">
         <h4 className="sobreMi__info-subtitulo rela">
           Desarrollador Front End
