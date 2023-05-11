@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { animacionApararicion } from "../assets/FramerMotion/animaciones";
 
 // importar componentes de porfolio
-import { ProyectosComponente } from "../componentes/porfolio/proyectosComponente";
+import { proyectosComponente } from "../componentes/porfolio/proyectosComponente";
 
 export const Porfolio = () => {
   return (
@@ -27,10 +27,10 @@ export const Porfolio = () => {
 
       {/* proyectos realizados por mi */}
       <div className="porfolio__proyectos">
-        <ProyectosComponente />
-        <ProyectosComponente />
-        <ProyectosComponente />
-        <ProyectosComponente />
+        <proyectosComponente />
+        <proyectosComponente />
+        <proyectosComponente />
+        <proyectosComponente />
       </div>
     </section>
   );
