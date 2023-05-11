@@ -37,7 +37,7 @@ export const NavbarComponente = () => {
             <a href="#porfolio">Portfolio</a>
           </li>
           <li className="nav__links-link">
-            <a href="#sobreMi">Sobre Mi</a>
+            <a href="#sobreMi">Sobre Mí</a>
           </li>
           <li className="nav__links-link">
             <a href="#habilidades">Habilidades</a>

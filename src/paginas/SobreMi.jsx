@@ -12,7 +12,7 @@ export const SobreMi = () => {
     <section id="sobreMi" className="sobreMi">
       {/* titulo */}
       <h2 className="titulo rela">
-        Sobre <span>Mi</span>
+        Sobre <span>Mí</span>
         <motion.span
           variants={animacionApararicion(0.1)}
           initial="inicio"

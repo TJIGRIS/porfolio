@@ -19,7 +19,7 @@ export const Contactame = () => {
       <form action="" className="contactame__form">
         <div className="contactame__form-f rela">
           <input type="text" name="" id="" placeholder="Nombre Completo" />
-          <input type="number" name="" id="" placeholder="Numero Telefonico" />
+          <input type="number" name="" id="" placeholder="Número Teléfonico" />
           <motion.span
             variants={animacionApararicion(0.3)}
             initial="inicio"
@@ -35,7 +35,7 @@ export const Contactame = () => {
             type="email"
             name=""
             id=""
-            placeholder="Correo Electronico"
+            placeholder="Correo Electrónico"
           />
           <motion.span
             variants={animacionApararicion(0.5)}
