@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Inicio } from "./paginas/Inicio";
-import { Porfolio } from "./paginas/Porfolio";
+import { Portfolio } from "./paginas/Portfolio";
 import { SobreMi } from "./paginas/SobreMi";
 import { Habilidades } from "./paginas/Habilidades";
 import { Contactame } from "./paginas/Contactame";
@@ -12,7 +12,7 @@ function App() {
     <div>
       <div className="container">
         <Inicio />
-        <Porfolio />
+        <Portfolio />
         <SobreMi />
         <Habilidades />
         <Contactame />

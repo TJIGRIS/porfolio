@@ -10,12 +10,12 @@ import { animacionApararicion } from "../assets/FramerMotion/animaciones";
 // importar componentes de porfolio
 import { ProyectosComponente } from "../componentes/porfolio/ProyectosComponente";
 
-export const Porfolio = () => {
+export const Portfolio = () => {
   return (
     <section id="porfolio" className="porfolio">
       {/* titulo */}
-      <h2 className="porfolio__titulo titulo rela">
-        Por<span>folio</span>
+      <h2 className="titulo rela">
+        Port<span>folio</span>
         <motion.span
           variants={animacionApararicion(0.1)}
           initial="inicio"
