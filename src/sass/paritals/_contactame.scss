@@ -39,6 +39,17 @@
 
     & textarea {
       height: 10rem;
+      resize: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      & {
+        width: 100%;
+
+        &-f {
+          flex-direction: column;
+        }
+      }
     }
   }
 }

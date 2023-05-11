@@ -10,5 +10,13 @@
     & > .btn > .icon {
       color: $bg-color-variante;
     }
+
+    @media screen and (max-width: 480px) {
+      padding: 0.5rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 0.5rem;
+    }
   }
 }

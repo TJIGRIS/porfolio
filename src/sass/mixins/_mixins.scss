@@ -7,9 +7,15 @@
   color: $bg-color;
   border-radius: 0.5rem;
   cursor: pointer;
-  
+
   &:hover {
     transition: all 500ms ease;
     background: $color-blanco;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 0.5rem .9rem;
+    }
   }
 }
