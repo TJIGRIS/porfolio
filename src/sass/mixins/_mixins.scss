@@ -1,0 +1,15 @@
+@mixin boton {
+  width: max-content;
+  padding: 0.7rem 1.5rem;
+  background: $color-turquesa;
+  border: none;
+  font-weight: 700;
+  color: $bg-color;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  &:hover {
+    transition: all 500ms ease;
+    background: $color-blanco;
+  }
+}

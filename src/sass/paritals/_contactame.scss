@@ -1,0 +1,44 @@
+.contactame {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: calc(100vh - 5rem);
+  gap: 2rem;
+
+  &__titulo {
+    font-size: $fontSizeTitulo2;
+  }
+
+  &__form {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+
+    &-f {
+      display: flex;
+      gap: 0.5rem;
+      width: 100%;
+    }
+
+    & div {
+      width: 100%;
+    }
+
+    & input,
+    & textarea {
+      width: 100%;
+      background: transparent;
+      padding: 0.6rem;
+      border: 0.1rem solid $color-turquesa;
+      border-radius: 0.5rem;
+      color: $color-blanco;
+      outline: none;
+    }
+
+    & textarea {
+      height: 10rem;
+    }
+  }
+}

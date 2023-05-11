@@ -1,0 +1,36 @@
+.habilidades {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: calc(100vh - 5rem);
+
+  & h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    &-front,
+    &-backend {
+      width: 20rem;
+      background: $bg-color-variante;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      & > h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      
+
+
+    }
+  }
+}
