@@ -15,7 +15,7 @@ import { CgWebsite } from "react-icons/cg";
 // importar imagenes
 import imgMientras from "../../assets/imagenes/1.jpeg";
 
-export const ProyectosComponente = () => {
+export const proyectosComponente = () => {
   return (
     <article className="porfolio__proyectos-web rela">
       <div className="porfolio__proyectos-web-imagen">
