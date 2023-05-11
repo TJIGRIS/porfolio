@@ -1,5 +1,6 @@
 import React from "react";
-import { Inicio } from "./paginas/inicio";
+
+import { Inicio } from "./paginas/Inicio";
 import { Porfolio } from "./paginas/Porfolio";
 import { SobreMi } from "./paginas/SobreMi";
 import { Habilidades } from "./paginas/Habilidades";
