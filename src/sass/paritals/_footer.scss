@@ -12,11 +12,15 @@
     }
 
     @media screen and (max-width: 480px) {
-      padding: 0.5rem;
+      & .copyright {
+        font-size: $fontSizeTexto;
+      }
     }
 
     @media screen and (max-width: 1024px) {
-      padding: 0.5rem;
+      & {
+        padding: 0.5rem;
+      }
     }
   }
 }

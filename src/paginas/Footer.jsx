@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="copyright">
           © 2023 Todos los derechos reservados. TJIGRIS.
           <motion.span
-            variants={animacionApararicion(0.11)}
+            variants={animacionApararicion(0.2)}
             initial="inicio"
             whileInView={"ver"}
             viewport={{ once: false, amount: 0.7 }}
