@@ -29,7 +29,7 @@ export const Habilidades = () => {
           variants={animacionApararicion(0.1)}
           initial="inicio"
           whileInView={"ver"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="transicionW"
         ></motion.span>
       </h2>

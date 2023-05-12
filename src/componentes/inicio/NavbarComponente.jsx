@@ -36,20 +36,30 @@ export const NavbarComponente = () => {
             toggle == false ? "nav__links rela" : "nav__links rela active"
           }
         >
-          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
-            <a href="#inicio">Inicio</a>
+          <li className="nav__links-link">
+            <a onClick={() => setToggle(!toggle)} href="#inicio">
+              Inicio
+            </a>
           </li>
-          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
-            <a href="#porfolio">Portfolio</a>
+          <li className="nav__links-link">
+            <a onClick={() => setToggle(!toggle)} href="#porfolio">
+              Portfolio
+            </a>
           </li>
-          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
-            <a href="#sobreMi">Sobre Mí</a>
+          <li className="nav__links-link">
+            <a onClick={() => setToggle(!toggle)} href="#sobreMi">
+              Sobre Mí
+            </a>
           </li>
-          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
-            <a href="#habilidades">Habilidades</a>
+          <li className="nav__links-link">
+            <a onClick={() => setToggle(!toggle)} href="#habilidades">
+              Habilidades
+            </a>
           </li>
-          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
-            <a href="#contactame">Contactame</a>
+          <li className="nav__links-link">
+            <a onClick={() => setToggle(!toggle)} href="#contactame">
+              Contáctame
+            </a>
           </li>
 
           <motion.span

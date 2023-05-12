@@ -25,7 +25,7 @@ export const InicioComponente = () => {
               variants={animacionApararicion(0.3)}
               initial="inicio"
               whileInView={"ver"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="transicionW"
             ></motion.span>
           </h1>
@@ -36,7 +36,7 @@ export const InicioComponente = () => {
               variants={animacionApararicion(0.5)}
               initial="inicio"
               whileInView={"ver"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="transicionW"
             ></motion.span>
           </h3>
@@ -50,7 +50,7 @@ export const InicioComponente = () => {
             variants={animacionApararicion(0.7)}
             initial="inicio"
             whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="transicionW"
           ></motion.span>
         </p>
@@ -62,7 +62,7 @@ export const InicioComponente = () => {
             variants={animacionApararicion(0.9)}
             initial="inicio"
             whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="transicionW"
           ></motion.span>
         </a>
@@ -82,7 +82,7 @@ export const InicioComponente = () => {
             variants={animacionApararicion(0.11)}
             initial="inicio"
             whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="transicionW"
           ></motion.span>
         </div>
@@ -100,7 +100,7 @@ export const InicioComponente = () => {
             variants={animacionApararicion(0.13)}
             initial="inicio"
             whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="transicionW"
           ></motion.span>
           <svg

@@ -5,13 +5,13 @@ import { animacionApararicion } from "../assets/FramerMotion/animaciones";
 export const Contactame = () => {
   return (
     <section id="contactame" className="contactame">
-      <h2 className="contactame__titulo rela">
-        Contactame
+      <h2 className="contactame__titulo titulo  rela">
+        Contác<span>tame</span>
         <motion.span
           variants={animacionApararicion(0.1)}
           initial="inicio"
           whileInView={"ver"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="transicionW"
         ></motion.span>
       </h2>
