@@ -18,9 +18,9 @@ export const Footer = () => {
           ></motion.span>
         </div>
 
-        <div className="btn">
+        <a href="#inicio" className="btn">
           <AiOutlineArrowUp className="icon" />
-        </div>
+        </a>
       </div>
     </motion.div>
   );

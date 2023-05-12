@@ -63,6 +63,11 @@
         justify-content: space-between;
         align-items: center;
 
+        & > .icon {
+          width: 1.9rem;
+          height: 1.9rem;
+        }
+
         & > .icon:hover {
           transition: all 500ms ease;
           color: $color-blanco;
