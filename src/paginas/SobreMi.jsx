@@ -11,27 +11,13 @@ export const SobreMi = () => {
   return (
     <section id="sobreMi" className="sobreMi">
       {/* titulo */}
-      <h2 className="titulo rela">
+      <h2 className="titulo">
         Sobre <span>Mí</span>
-        <motion.span
-          variants={animacionApararicion(0.1)}
-          initial="inicio"
-          whileInView={"ver"}
-          viewport={{ once: true, amount: 0.7 }}
-          className="transicionW"
-        ></motion.span>
       </h2>
 
       {/* imagen */}
-      <div className="sobreMi__imagen rela">
+      <div className="sobreMi__imagen">
         <div className="sobreMi__imagen-p">
-          <motion.span
-            variants={animacionApararicion(0.3)}
-            initial="inicio"
-            whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="transicionW"
-          ></motion.span>
           <svg
             className="sobreMi__imagen-modificacion"
             xmlns="http://www.w3.org/2000/svg"
@@ -441,25 +427,11 @@ export const SobreMi = () => {
 
       {/* informacion de mi */}
       <div className="sobreMi__info">
-        <h4 className="sobreMi__info-subtitulo rela">
+        <h4 className="sobreMi__info-subtitulo ">
           Desarrollador Front End
-          <motion.span
-            variants={animacionApararicion(0.5)}
-            initial="inicio"
-            whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="transicionW"
-          ></motion.span>
         </h4>
 
-        <p className="sobreMi__info-texto rela">
-          <motion.span
-            variants={animacionApararicion(0.7)}
-            initial="inicio"
-            whileInView={"ver"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="transicionW"
-          ></motion.span>
+        <p className="sobreMi__info-texto">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque,
           perferendis? Repellat itaque quidem quo ut quae cupiditate ratione,
           dolorem fugiat debitis aut voluptates! Ratione, dignissimos minus.

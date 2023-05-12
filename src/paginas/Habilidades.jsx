@@ -23,15 +23,8 @@ export const Habilidades = () => {
   return (
     <section id="habilidades" className="habilidades">
       {/* titulo */}
-      <h2 className="titulo rela">
+      <h2 className="titulo">
         Habili<span>dades</span>
-        <motion.span
-          variants={animacionApararicion(0.1)}
-          initial="inicio"
-          whileInView={"ver"}
-          viewport={{ once: true, amount: 0.7 }}
-          className="transicionW"
-        ></motion.span>
       </h2>
 
       <div className="habilidades__container">
@@ -107,7 +100,7 @@ export const Habilidades = () => {
           </div>
 
           <motion.span
-            variants={animacionApararicion(0.8)}
+            variants={animacionApararicion(0.2)}
             initial="inicio"
             whileInView={"ver"}
             viewport={{ once: false, amount: 0.7 }}
@@ -143,7 +136,7 @@ export const Habilidades = () => {
           </div>
 
           <motion.span
-            variants={animacionApararicion(0.8)}
+            variants={animacionApararicion(0.2)}
             initial="inicio"
             whileInView={"ver"}
             viewport={{ once: false, amount: 0.7 }}

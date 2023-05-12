@@ -47,7 +47,7 @@ export const ProyectosComponente = ({ imagen, urlWeb, urlGit, HTML, SCSS, TAILWI
       </div>
 
       <motion.span
-        variants={animacionApararicion(0.4)}
+        variants={animacionApararicion(0.2)}
         initial="inicio"
         whileInView={"ver"}
         viewport={{ once: false, amount: 0.7 }}

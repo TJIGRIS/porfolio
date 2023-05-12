@@ -17,15 +17,8 @@ export const Portfolio = () => {
   return (
     <section id="porfolio" className="porfolio">
       {/* titulo */}
-      <h2 className="titulo rela">
+      <h2 className="titulo">
         Port<span>folio</span>
-        <motion.span
-          variants={animacionApararicion(0.1)}
-          initial="inicio"
-          whileInView={"ver"}
-          viewport={{ once: true, amount: 0.7 }}
-          className="transicionW"
-        ></motion.span>
       </h2>
 
       {/* proyectos realizados por mi */}
