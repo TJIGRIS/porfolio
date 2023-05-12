@@ -32,7 +32,7 @@ export const Portfolio = () => {
       <div className="porfolio__proyectos">
         {
           proyectosPortfolio.map(item => (
-            <ProyectosComponente key={item.id} imagen={item.img} urlWeb={item.urlWeb} urlGit={item.urlGit}/>
+            <ProyectosComponente key={item.id} imagen={item.img} urlWeb={item.urlWeb} urlGit={item.urlGit} HTML={item.herramientas.html} SCSS={item.herramientas.scss} TAILWIND={item.herramientas.tailwind} JAVASCRIPT={item.herramientas.javascript} VITE={item.herramientas.vite} />
           ))
         }
       </div>

@@ -1,5 +1,5 @@
-// importar react
-import React from "react";
+// importar react, useState
+import React, { useState } from "react";
 
 // importar motion de framer motion para las animaciones
 import { motion } from "framer-motion";
@@ -11,11 +11,15 @@ import { animacionApararicion } from "../../assets/FramerMotion/animaciones";
 import { DiHtml5, DiSass, DiJavascript1, DiGithubBadge } from "react-icons/di";
 import { TbBrandVite } from "react-icons/tb";
 import { CgWebsite } from "react-icons/cg";
+import { SiTailwindcss } from "react-icons/si";
 
 // importar imagenes
 import imgMientras from "../../assets/imagenes/segundoProyecto.png";
 
-export const ProyectosComponente = ({ imagen, urlWeb, urlGit }) => {
+export const ProyectosComponente = ({ imagen, urlWeb, urlGit, HTML, SCSS, TAILWIND, JAVASCRIPT, VITE }) => {
+
+  const [html, setHtml] = useState(false);
+
   return (
     <article className="porfolio__proyectos-web rela">
       {/* imagen del proyecto */}
@@ -35,10 +39,11 @@ export const ProyectosComponente = ({ imagen, urlWeb, urlGit }) => {
 
       {/* herramientas usadas en el proyecto */}
       <div className="porfolio__proyectos-web-info">
-        <DiHtml5 className="icon" />
-        <DiSass className="icon" />
-        <DiJavascript1 className="icon" />
-        <TbBrandVite className="icon" />
+        {HTML === "html" ? <DiHtml5 className="icon" /> : null}
+        {SCSS === "scss" ? <DiSass className="icon" /> : null}
+        {TAILWIND === "tailwind" ? <SiTailwindcss className="icon" /> : null}
+        {JAVASCRIPT === "javascript" ? <DiJavascript1 className="icon" /> : null}
+        {VITE === "vite" ? <TbBrandVite className="icon" /> : null}
       </div>
 
       <motion.span
