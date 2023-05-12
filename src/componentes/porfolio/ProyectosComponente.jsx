@@ -13,14 +13,14 @@ import { TbBrandVite } from "react-icons/tb";
 import { CgWebsite } from "react-icons/cg";
 
 // importar imagenes
-// import imgMientras from "../../assets/imagenes/1.jpeg";
+import imgMientras from "../../assets/imagenes/segundoProyecto.png";
 
 export const ProyectosComponente = () => {
   return (
     <article className="porfolio__proyectos-web rela">
       {/* imagen del proyecto */}
       <div className="porfolio__proyectos-web-imagen">
-        {/* <img src={imgMientras} alt="" /> */}
+        <img src={imgMientras} alt="" />
 
         <div className="porfolio__proyectos-web-imagen-ver">
           <a href="#">

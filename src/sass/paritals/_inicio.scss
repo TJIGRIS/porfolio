@@ -87,7 +87,7 @@ nav.active {
       display: none;
       width: 10rem;
       top: 4rem;
-      right: 0;
+      right: 0.5rem;
       background: $bg-color-variante;
       position: absolute;
       flex-direction: column;
@@ -98,6 +98,10 @@ nav.active {
 
       &-link {
         padding: 0.8rem;
+      }
+
+      &.active {
+        display: flex;
       }
     }
     & > .toggle {

@@ -1,5 +1,5 @@
 // importar react
-import React from "react";
+import React, { useState } from "react";
 
 // importar motion para la funcionalidad de las animaciones
 import { motion } from "framer-motion";
@@ -12,6 +12,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { HiBars3 } from "react-icons/hi2";
 
 export const NavbarComponente = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <nav className="active">
       <div className="nav contenido rela">
@@ -29,20 +31,24 @@ export const NavbarComponente = () => {
         </div>
 
         {/* links */}
-        <ul className="nav__links rela">
-          <li className="nav__links-link active">
+        <ul
+          className={
+            toggle == false ? "nav__links rela" : "nav__links rela active"
+          }
+        >
+          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
             <a href="#inicio">Inicio</a>
           </li>
-          <li className="nav__links-link">
+          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
             <a href="#porfolio">Portfolio</a>
           </li>
-          <li className="nav__links-link">
+          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
             <a href="#sobreMi">Sobre Mí</a>
           </li>
-          <li className="nav__links-link">
+          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
             <a href="#habilidades">Habilidades</a>
           </li>
-          <li className="nav__links-link">
+          <li className="nav__links-link" onClick={() => setToggle(!toggle)}>
             <a href="#contactame">Contactame</a>
           </li>
 
@@ -56,9 +62,12 @@ export const NavbarComponente = () => {
         </ul>
 
         {/* barras */}
-        <div className="toggle">
-          <HiBars3 className="icon" />
-          {/* {document.body.scrollWidth >= 100 ? <HiBars3 /> : <AiOutlineClose />} */}
+        <div className="toggle" onClick={() => setToggle(!toggle)}>
+          {toggle == true ? (
+            <AiOutlineClose className="icon" />
+          ) : (
+            <HiBars3 className="icon" />
+          )}
         </div>
       </div>
     </nav>
