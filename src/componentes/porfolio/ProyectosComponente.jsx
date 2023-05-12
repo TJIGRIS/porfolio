@@ -15,19 +15,19 @@ import { CgWebsite } from "react-icons/cg";
 // importar imagenes
 import imgMientras from "../../assets/imagenes/segundoProyecto.png";
 
-export const ProyectosComponente = () => {
+export const ProyectosComponente = ({ imagen, urlWeb, urlGit }) => {
   return (
     <article className="porfolio__proyectos-web rela">
       {/* imagen del proyecto */}
       <div className="porfolio__proyectos-web-imagen">
-        <img src={imgMientras} alt="" />
+        <img src={imagen} alt="" />
 
         <div className="porfolio__proyectos-web-imagen-ver">
-          <a href="#">
+          <a href={urlWeb} target="_blank">
             <CgWebsite className="icon" />
           </a>
 
-          <a href="#">
+          <a href={urlGit} target="_blank">
             <DiGithubBadge className="icon" />
           </a>
         </div>

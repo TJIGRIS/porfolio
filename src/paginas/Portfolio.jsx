@@ -10,6 +10,9 @@ import { animacionApararicion } from "../assets/FramerMotion/animaciones";
 // importar componentes de porfolio
 import { ProyectosComponente } from "../componentes/porfolio/ProyectosComponente";
 
+// importar api de los proyectos
+import { proyectosPortfolio } from "../API/Apis";
+
 export const Portfolio = () => {
   return (
     <section id="porfolio" className="porfolio">
@@ -27,10 +30,11 @@ export const Portfolio = () => {
 
       {/* proyectos realizados por mi */}
       <div className="porfolio__proyectos">
-        <ProyectosComponente />
-        <ProyectosComponente />
-        <ProyectosComponente />
-        <ProyectosComponente />
+        {
+          proyectosPortfolio.map(item => (
+            <ProyectosComponente key={item.id} imagen={item.img} urlWeb={item.urlWeb} urlGit={item.urlGit}/>
+          ))
+        }
       </div>
     </section>
   );
