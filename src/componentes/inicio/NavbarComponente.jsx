@@ -18,22 +18,14 @@ export const NavbarComponente = () => {
     <nav className="active">
       <div className="nav contenido rela">
         {/* logo */}
-        <div className="nav__logo rela">
+        <div className="nav__logo">
           <a href="#">TJIGRIS</a>
-
-          <motion.span
-            variants={animacionApararicion(0)}
-            initial="inicio"
-            whileInView={"ver"}
-            viewport={{ once: true, amount: 0.7 }}
-            className="transicionW"
-          ></motion.span>
         </div>
 
         {/* links */}
         <ul
           className={
-            toggle == false ? "nav__links rela" : "nav__links rela active"
+            toggle == false ? "nav__links" : "nav__links active"
           }
         >
           <li className="nav__links-link">
@@ -61,14 +53,6 @@ export const NavbarComponente = () => {
               Contáctame
             </a>
           </li>
-
-          <motion.span
-            variants={animacionApararicion(0.2)}
-            initial="inicio"
-            whileInView={"ver"}
-            viewport={{ once: true, amount: 0.7 }}
-            className="transicionW"
-          ></motion.span>
         </ul>
 
         {/* barras */}
