@@ -83,6 +83,13 @@ nav.active {
   }
 
   @media screen and (max-width: 640px) {
+    &__logo {
+      &:hover > a {
+        transition: none;
+        color: $color-blanco;
+      }
+    }
+
     &__links {
       display: none;
       width: 10rem;
@@ -98,6 +105,11 @@ nav.active {
 
       &-link {
         padding: 0.8rem;
+      }
+
+      &-link:hover > a {
+        transition: none;
+        color: $color-blanco;
       }
 
       &.active {
@@ -166,6 +178,19 @@ nav.active {
   @media screen and (max-width: 640px) {
     & {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & .inicio__info {
+      &-redes {
+        & > a {
+          &:hover {
+            transition: none;
+            color: $color-turquesa;
+          }
+        }
+      }
     }
   }
 
