@@ -46,6 +46,16 @@ export const ProyectosComponente = ({ imagen, urlWeb, urlGit, HTML, SCSS, TAILWI
         {VITE === "vite" ? <TbBrandVite className="icon" /> : null}
       </div>
 
+      <div className="porfolio__proyectos-web-ver">
+        <a href={urlWeb} target="_blank">
+          <CgWebsite className="icon" />
+        </a>
+
+        <a href={urlGit} target="_blank">
+          <DiGithubBadge className="icon" />
+        </a>
+      </div>
+
       <motion.span
         variants={animacionApararicion(0.2)}
         initial="inicio"

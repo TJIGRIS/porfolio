@@ -73,11 +73,56 @@
           color: $color-blanco;
         }
       }
+
+      &-ver {
+        display: none;
+      }
     }
 
     @media screen and (max-width: 768px) {
       & {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      &-web {
+        &:hover {
+          transform: translateY(0);
+          transition: none;
+          box-shadow: none;
+        }
+
+        &-imagen {
+          &-ver {
+            display: none;
+          }
+        }
+
+        &-info {
+          & > .icon:hover {
+            transition: none;
+            color: $color-turquesa;
+          }
+        }
+
+        &-ver {
+          height: 3rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          & a {
+            height: 3rem;
+
+            & > .icon {
+              width: 3rem;
+              height: 3rem;
+              color: $color-blanco;
+            }
+          }
+        }
       }
     }
 
