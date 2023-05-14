@@ -432,11 +432,7 @@ export const SobreMi = () => {
         </h4>
 
         <p className="sobreMi__info-texto">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque,
-          perferendis? Repellat itaque quidem quo ut quae cupiditate ratione,
-          dolorem fugiat debitis aut voluptates! Ratione, dignissimos minus.
-          Consectetur tenetur magni vel autem eaque aperiam eligendi quaerat,
-          commodi fugiat debitis laboriosam esse!
+          Como universitario apasionado por la programación web, me enfoco principalmente en el desarrollo front-end, buscando siempre aprender y desarrollar nuevas habilidades en esta área. Con 21 años de edad, me destaco por mi capacidad autodidacta, lo que me permite mantenerme actualizado en un campo tan dinámico y en constante evolución como lo es la informática.
         </p>
       </div>
     </section>

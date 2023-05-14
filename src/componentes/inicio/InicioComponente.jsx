@@ -43,9 +43,7 @@ export const InicioComponente = () => {
         </div>
 
         <p className="inicio__info-texto rela">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
-          accusantium iure perspiciatis quaerat commodi doloribus asperiores
-          libero, ipsam delectus a.
+          Tengo un gran entusiasmo por aprender y desarrollar nuevas habilidades en el campo de desarrollo web.
           <motion.span
             variants={animacionApararicion(0.7)}
             initial="inicio"

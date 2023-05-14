@@ -10,14 +10,17 @@ export const Contactame = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('portfolio', 'template_9oappor', form.current, 'DgZ6w8vzLHsyWBFfJ')
-      .then((result) => {
-        console.log(result.text);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-
+    if (form.current.checkValidity()) {
+      emailjs.sendForm('portfolio', 'template_9oappor', form.current, 'DgZ6w8vzLHsyWBFfJ')
+        .then((result) => {
+          console.log(result.text);
+          form.current.reset();
+        }, (error) => {
+          console.log(error.text);
+        });
+    } else {
+      alert('Por favor, completa todos los campos requeridos.');
+    }
   };
 
 
