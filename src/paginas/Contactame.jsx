@@ -1,7 +1,26 @@
-// importar react
-import React from "react";
+// importar react, useRef
+import React, { useRef } from 'react';
+
+// importar emailjs
+import emailjs from '@emailjs/browser';
 
 export const Contactame = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('portfolio', 'template_9oappor', form.current, 'DgZ6w8vzLHsyWBFfJ')
+      .then((result) => {
+        console.log(result.text);
+        form.current.reset();
+      }, (error) => {
+        console.log(error.text);
+      });
+
+  };
+
+
   return (
     <section id="contactame" className="contactame">
       {/* titulo */}
@@ -10,36 +29,38 @@ export const Contactame = () => {
       </h2>
 
       {/* formulario */}
-      <form action="" className="contactame__form">
+      <form ref={form} onSubmit={sendEmail} className="contactame__form">
         <div className="contactame__form-f ">
-          <input type="text" name="" id="" placeholder="Nombre Completo" />
-          <input type="number" name="" id="" placeholder="Número Teléfonico" />
-
+          <input type="text" required name="nombre" id="nombre" autoComplete='off' placeholder="Nombre Completo" />
+          <input type="number" name="telefono" id="telefono" autoComplete='off' placeholder="Número Teléfonico" />
         </div>
 
         <div className="rela">
           <input
+            required
             className="contactame__form-e "
             type="email"
-            name=""
-            id=""
+            autoComplete='off'
+            name="email"
+            id="email"
             placeholder="Correo Electrónico"
           />
         </div>
 
         <div className="">
           <textarea
+            required
             className="contactame__form-a"
-            name=""
-            id=""
+            name="mensaje"
+            id="mensaje"
             placeholder="Escribe tu mensaje"
+            autoComplete='off'
           ></textarea>
         </div>
 
-        <button className="btn">
-          Enviar
-        </button>
+        <input type="submit" className="btn" value="Enviar" />
       </form>
     </section>
   );
 };
+

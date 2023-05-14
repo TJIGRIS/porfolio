@@ -35,11 +35,21 @@
       border-radius: 0.5rem;
       color: $color-blanco;
       outline: none;
+      overflow: hidden;
     }
 
     & textarea {
       height: 10rem;
       resize: none;
+    }
+
+    & .btn {
+      width: 6rem;
+    }
+
+    & .btn:hover {
+      color: $color-turquesa;
+      background: $bg-color-variante;
     }
 
     @media screen and (max-width: 768px) {
@@ -49,6 +59,11 @@
         &-f {
           flex-direction: column;
         }
+      }
+
+      & .btn:hover {
+        color: $color-blanco;
+        background: $bg-color;
       }
     }
   }
